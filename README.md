@@ -1,91 +1,79 @@
-# DataMining_AdultIncome
-📊 Binary Classification of Annual Income – Data Mining Project
+# Binary Classification of Annual Income – Data Mining Project
 
-🔍 Project Overview
+## Project Overview
 
-This project, developed as part of the Data Mining course at the University of Mannheim, aims to predict whether an individual's annual income exceeds $50,000 based on demographic and occupational data. It leverages advanced preprocessing techniques, feature selection, and multiple machine learning models including Gradient Boosting, Random Forest, SVM, and Naïve Bayes.
+This project, developed as part of the Data Mining course at the University of Mannheim, aims to **predict whether an individual's annual income exceeds \$50,000** based on demographic and occupational data. It leverages advanced **preprocessing techniques**, **feature selection**, and multiple **machine learning models** including **Gradient Boosting**, **Random Forest**, **SVM**, and **Naïve Bayes**.
 
-The final model achieves a weighted F1-score of 0.84, outperforming 88% of existing models on Kaggle’s benchmark dataset.
+The final model achieves a **weighted F1-score of 0.84**, outperforming 88% of existing models on Kaggle’s benchmark dataset.
 
-🧠 Technologies & Methods
+## Technologies & Methods
 
-Python, scikit-learn, pandas, matplotlib
+* Python, scikit-learn, pandas, matplotlib
+* Data Cleaning, One-Hot Encoding, Feature Engineering
+* Model Evaluation: Stratified Sampling, Cross-Validation
+* Hyperparameter Tuning: Randomized Search
+* Final Model: Gradient Boosting Classifier
 
-Data Cleaning, One-Hot Encoding, Feature Engineering
+## Dataset
 
-Model Evaluation: Stratified Sampling, Cross-Validation
+* **Source**: [1994 U.S. Census Income Data on Kaggle](https://www.kaggle.com/datasets/anaghakp/adult-income-census)
+* **Size**: 31,947 entries, 12 attributes
+* **Target**: Income (>50K vs ≤50K)
 
-Hyperparameter Tuning: Randomized Search
+## Model Results
 
-Final Model: Gradient Boosting Classifier
+* Gradient Boosting Classifier achieved the best performance.
+* Evaluation based on **weighted F1-score** to address class imbalance.
+* Error analysis and feature importance analysis included.
 
-📁 Dataset
+## How to Run
 
-Source: 1994 U.S. Census Income Data on Kaggle
-
-Size: 31,947 entries, 12 attributes
-
-Target: Income (>50K vs ≤50K)
-
-📈 Model Results
-
-Gradient Boosting Classifier achieved the best performance.
-
-Evaluation based on weighted F1-score to address class imbalance.
-
-Error analysis and feature importance analysis included.
-
-📦 How to Run
-
+```bash
 pip install -r requirements.txt
 python model_pipeline.py
+```
 
-📜 Authors
+## Authors
 
-Miguel Mendes, João Ferreira, Maria Beili Mena, Paola Tomorri, Klea Hoxha, Sueda Sogutlu
+* Miguel Mendes, João Ferreira, Maria Beili Mena, Paola Tomorri, Klea Hoxha, Sueda Sogutlu
 
-📊 Clasificación Binaria de Ingresos Anuales – Proyecto de Minería de Datos
+---
 
-🔍 Descripción del Proyecto
+# Clasificación Binaria de Ingresos Anuales – Proyecto de Minería de Datos
 
-Este proyecto, desarrollado para la asignatura de Minería de Datos en la Universidad de Mannheim, tiene como objetivo predecir si el ingreso anual de una persona supera los $50,000 a partir de datos demográficos y laborales. Se aplicaron técnicas avanzadas de preprocesamiento, selección de características, y se probaron varios modelos de aprendizaje automático, destacando Gradient Boosting, Random Forest, SVM y Naïve Bayes.
+## Descripción del Proyecto
 
-El modelo final alcanzó un F1-score ponderado de 0.84, superando al 88% de los modelos de referencia en Kaggle.
+Este proyecto, desarrollado para la asignatura de Minería de Datos en la Universidad de Mannheim, tiene como objetivo **predecir si el ingreso anual de una persona supera los \$50,000** a partir de datos demográficos y laborales. Se aplicaron técnicas avanzadas de **preprocesamiento**, **selección de características**, y se probaron varios **modelos de aprendizaje automático**, destacando **Gradient Boosting**, **Random Forest**, **SVM** y **Naïve Bayes**.
 
-🧠 Tecnologías y Métodos
+El modelo final alcanzó un **F1-score ponderado de 0.84**, superando al 88% de los modelos de referencia en Kaggle.
 
-Python, scikit-learn, pandas, matplotlib
+## Tecnologías y Métodos
 
-Limpieza de datos, codificación One-Hot, ingeniería de características
+* Python, scikit-learn, pandas, matplotlib
+* Limpieza de datos, codificación One-Hot, ingeniería de características
+* Evaluación: muestreo estratificado, validación cruzada
+* Ajuste de hiperparámetros: Randomized Search
+* Modelo final: Gradient Boosting Classifier
 
-Evaluación: muestreo estratificado, validación cruzada
+## Conjunto de Datos
 
-Ajuste de hiperparámetros: Randomized Search
+* **Fuente**: [Datos de ingresos del censo de EE.UU. de 1994 en Kaggle](https://www.kaggle.com/datasets/anaghakp/adult-income-census)
+* **Tamaño**: 31,947 registros, 12 atributos
+* **Variable objetivo**: Ingreso (>50K vs ≤50K)
 
-Modelo final: Gradient Boosting Classifier
+## Resultados del Modelo
 
-📁 Conjunto de Datos
+* El modelo Gradient Boosting obtuvo el mejor desempeño.
+* Evaluación basada en **F1-score ponderado** para abordar el desbalance de clases.
+* Incluye análisis de errores y análisis de importancia de características.
 
-Fuente: Datos de ingresos del censo de EE.UU. de 1994 en Kaggle
+## Cómo Ejecutar
 
-Tamaño: 31,947 registros, 12 atributos
-
-Variable objetivo: Ingreso (>50K vs ≤50K)
-
-📈 Resultados del Modelo
-
-El modelo Gradient Boosting obtuvo el mejor desempeño.
-
-Evaluación basada en F1-score ponderado para abordar el desbalance de clases.
-
-Incluye análisis de errores y análisis de importancia de características.
-
-📦 Cómo Ejecutar
-
+```bash
 pip install -r requirements.txt
 python model_pipeline.py
+```
 
-📜 Autores
+## Autores
 
-Miguel Mendes, João Ferreira, Maria Beili Mena, Paola Tomorri, Klea Hoxha, Sueda Sogutlu
-
+* Miguel Mendes, João Ferreira, Maria Beili Mena, Paola Tomorri, Klea Hoxha, Sueda Sogutlu
